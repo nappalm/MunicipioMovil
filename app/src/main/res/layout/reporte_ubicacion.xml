@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/mapa_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/botonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="15dp"
+        app:srcCompat="@drawable/ic_regresar_negro"
+        tools:ignore="VectorDrawableCompat" />
+
+    <include
+        android:id="@+id/Layout_Vista"
+        layout="@layout/vista_marcador"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <android.support.design.widget.FloatingActionButton
+      android:id="@+id/botonGuardar"
+      android:layout_width="wrap_content"
+
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="15dp"
+      android:clickable="true"
+      app:backgroundTint="#FFF"
+      app:fabSize="normal"
+      app:srcCompat="@drawable/ic_guardar" />
+
+</RelativeLayout>

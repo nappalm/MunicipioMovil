@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Municipio.Noticias_App">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:alpha=".8"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/travel_background" />
+
+            <ImageView
+                android:id="@+id/botonRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_regresar_negro"
+                tools:ignore="VectorDrawableCompat" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="10dp"
+            android:text="Noticias"
+            android:textAlignment="center"
+            android:textColor="#c7c7c7"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/ListNoticias"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/Layout_Ninguno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEE">
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="72dp"
+                    android:padding="5dp"
+                    app:srcCompat="@mipmap/me_noticias" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView27"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="Al parecer aun no hay noticias"
+                    android:textColor="#999" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/Layout_Cargando"
+                layout="@layout/vista_cargando"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

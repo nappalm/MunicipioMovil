@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Recuperacion.Recovery_App">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@mipmap/re_recupera" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_semibold"
+            android:text="Vamos a recuperar tu cuenta"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="10dp"
+            android:text="Paso 1"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:text="Por favor ingresa tu cuenta de correo electronico con la que recuerdas verte registrado."
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borde_gris"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/contenedor_transparente"
+                android:ems="10"
+                android:fontFamily="@font/encodesansexpanded_medium"
+                android:hint="Correo electronico"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:padding="3dp"
+            android:text="Presiona en el boton para enviar el codigo."
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/botonRecuperar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            app:backgroundTint="#FFF"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_guardar"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="10dp"
+            android:text="Paso 2"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:text="Ingresa el codigo que se te ha enviado a tu correo."
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borde_gris"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/contenedor_transparente"
+                android:ems="10"
+                android:fontFamily="@font/encodesansexpanded_medium"
+                android:hint="Codigo de verificación"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="10dp"
+            android:text="Paso 3"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:text="Elige una contraseña nueva."
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borde_gris"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editClave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/contenedor_transparente"
+                android:ems="10"
+                android:fontFamily="@font/encodesansexpanded_medium"
+                android:hint="Clave de acceso"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="10dp"
+            android:text="Paso 4"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:text="Si el codigo de validación es correcto, podras ingresar a tu cuenta con tu nueva clave."
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:padding="3dp"
+            android:text="Presiona en el boton para verificar."
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/botonVerificar"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            app:backgroundTint="#FFF"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_guardar"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+</ScrollView>
+
+    <ImageView
+        android:id="@+id/botonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="15dp"
+        app:srcCompat="@drawable/ic_regresar_negro"
+        tools:ignore="VectorDrawableCompat" />
+</RelativeLayout>

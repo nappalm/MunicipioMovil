@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Recuperacion.Keycode_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:alpha=".5"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ky_codigo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/borde_sombra"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/infoTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Ingresa el codigo de validación que enviamos a tu cuenta de correo."
+                android:textAlignment="center"
+                android:textColor="#555"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/borde_gris"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/contenedor_transparente"
+                    android:ems="10"
+                    android:fontFamily="@font/encodesansexpanded_medium"
+                    android:hint="_ _ _ _"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#555"
+                    android:textColorHint="#c7c7c7"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text=". . . . . . . . . . . . . . . . . . . ."
+                android:textAlignment="center"
+                android:textColor="#EEE"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/botonValidar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            app:backgroundTint="#FFF"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_guardar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/botonReenviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="15dp"
+                android:text="No me llego mi codigo"
+                android:textAlignment="center"
+                android:textColor="#999"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/Layout_Cargando"
+        layout="@layout/vista_cargando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

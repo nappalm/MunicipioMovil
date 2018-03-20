@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout_Reporte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Reportes.Reporte_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/degradado_amarillo"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/botonRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_regresar"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/repTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/botonRegresar"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_toEndOf="@+id/botonRegresar"
+                android:layout_toRightOf="@+id/botonRegresar"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Reportar bache"
+                android:textColor="#FFF8E1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/repTitulo"
+                android:layout_alignStart="@+id/repTitulo"
+                android:layout_below="@+id/repTitulo"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Por favor ingresa la información para continuar."
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#EEE"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="20dp"
+                    app:srcCompat="@mipmap/ba_ubicacion" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="20dp"
+                    app:srcCompat="@mipmap/ba_descripcion" />
+
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:padding="22dp"
+                    app:srcCompat="@mipmap/ba_foto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/botonUbicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="Buscar ubicación"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/checkUbicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Seleccionar"
+                        android:textColor="#555" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEE">
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/botonDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="Ingresa una descripción"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/checkDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Sin descripción"
+                        android:textColor="#555" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEE">
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/botonFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_medium"
+                        android:text="Adjuntar una foto para el reporte"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/checkFoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Seleccionar foto"
+                        android:textColor="#555" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#EEE">
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/botonEnviar"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/boton_azul"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Enviar reporte"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/Layout_Descripcion"
+        layout="@layout/vista_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</RelativeLayout>

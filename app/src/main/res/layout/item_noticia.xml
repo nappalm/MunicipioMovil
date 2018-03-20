@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEE"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:clipToPadding="false"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borde_sombra"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/not_Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:padding="5dp"
+                android:text="Hoy"
+                android:textAlignment="textEnd"
+                android:textColor="#999" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="3dp"
+                android:background="#c7c7c7">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/not_Emcabezado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Titulo de la noticia"
+                android:textColor="#555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/not_Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/imgReporte"
+                android:layout_toRightOf="@+id/imgReporte"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Tercer informe de gobierno en el municipio de tocumbo."
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/not_Autor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/repTipo"
+                android:layout_toEndOf="@+id/imgReporte"
+                android:layout_toRightOf="@+id/imgReporte"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Ayuntamiento de tocumbo."
+                android:textColor="#999"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Recuperacion.Reenviar_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@mipmap/ky_reenviar" />
+
+        <TextView
+            android:id="@+id/infoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:text="Te reenviamos la activación a tu correo: ppjuan_94@hotmail.com"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/encodesansexpanded_medium"
+            android:text="¿No tienes acceso a ese correo?"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/botonVReenviar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_semibold"
+            android:padding="10dp"
+            android:text="Cambiar correo"
+            android:textAlignment="center"
+            android:textColor="#555"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/Layout_Reenviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/borde_gris"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editReenviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/contenedor_transparente"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="Correo nuevo"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/botonReenviar"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/boton_azul"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/botonCargando"
+                        style="@style/AppTheme.WhiteAccent"
+                        android:layout_width="17dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="Reenviar"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/botonReintentar"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/borde_sombra"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/encodesansexpanded_medium"
+                    android:text="Volver a intentarlo"
+                    android:textAlignment="center"
+                    android:textColor="#999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Cuenta.Configurar_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/degradado_amarillo"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/botonRegresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_regresar"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/repTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/botonRegresar"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_toEndOf="@+id/botonRegresar"
+                android:layout_toRightOf="@+id/botonRegresar"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Configurar usuario"
+                android:textColor="#FFF8E1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/repTitulo"
+                android:layout_alignStart="@+id/repTitulo"
+                android:layout_below="@+id/repTitulo"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Ingresa tus datos"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/infoEditUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="5dp"
+                android:text="Ingresa tu nombre"
+                android:textColor="#999"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/editUno"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde_gris"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editDatosUno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/contenedor_transparente"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="Ingresa los datos"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#212121"
+                    android:textColorHint="#999" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/infoEditDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="5dp"
+                android:text="Apellidos"
+                android:textColor="#999"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/editDos"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde_gris"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editDatosDos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/contenedor_transparente"
+
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="Ingresa los datos"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textColor="#212121"
+                    android:textColorHint="#999" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/botonGuardar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            app:backgroundTint="#FFF"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_guardar" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/Layout_Cargando"
+        layout="@layout/vista_cargando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="desarrolladoresalpha.municipiomovil">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logotipo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logotipo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.Precarga_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Reportes.MisReportes_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Reportes.Reporte_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Reportes.Mapa_App"
+            android:label="PeribanMovil"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Reportes.Reporte_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="desarrolladoresalpha.municipiomovil.App_Reportes.Reporte_App" />
+        </activity>
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Municipio.Noticias_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Cuenta.Opciones_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Cuenta.Login_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Cuenta.Configurar_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Cuenta.Opciones_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Cuenta.Registro_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Cuenta.Login_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Recuperacion.Keycode_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Municipio.Localidades_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Municipio.Numeros_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Municipio.Municipio_App"
+            android:parentActivityName="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="desarrolladoresalpha.municipiomovil.App_Recuperacion.Reenviar_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity
+            android:name="desarrolladoresalpha.municipiomovil.App_Recuperacion.Recovery_App"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+</manifest>

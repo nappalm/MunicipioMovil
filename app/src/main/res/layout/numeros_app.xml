@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Municipio.Numeros_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@mipmap/nu_telefonos" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Numeros del ayuntamiento"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/espacedor_amarillo">
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/ListTelefonos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</RelativeLayout>

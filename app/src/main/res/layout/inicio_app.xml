@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Principal.Inicio_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/degradado_gris"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FAFAFA">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ba_pixel" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha=".8"
+                android:padding="10dp"
+                app:srcCompat="@mipmap/logotipo" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Peribán Móvil"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/inicioUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Manuel Morales"
+                android:textColor="#555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/inicioLocalidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inicioUsuario"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Santa Clara"
+                android:textColor="#999" />
+
+            <ImageView
+                android:id="@+id/botonMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/ic_menu"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout_Menus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_inicio"
+            android:elevation="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="5dp"
+                android:text="Generar un reporte"
+                android:textAlignment="center"
+                android:textColor="#999"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="top|center">
+
+                    <LinearLayout
+                        android:id="@+id/botonBache"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/borde_menu"
+                            android:clickable="false"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha=".8"
+                                android:padding="15dp"
+                                app:srcCompat="@mipmap/me_bache" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_bold"
+                            android:padding="10dp"
+                            android:text="Baches"
+                            android:textAlignment="center"
+                            android:textColor="#999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/botonIluminaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/borde_menu"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha=".8"
+                                android:padding="15dp"
+                                app:srcCompat="@mipmap/me_iluminaria" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_bold"
+                            android:padding="10dp"
+                            android:text="Lamparas"
+                            android:textAlignment="center"
+                            android:textColor="#999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/botonAnimal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/borde_menu"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha=".8"
+                                android:padding="15dp"
+                                app:srcCompat="@mipmap/me_animal" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_bold"
+                            android:padding="10dp"
+                            android:text="Animal"
+                            android:textAlignment="center"
+                            android:textColor="#999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_weight="1"
+                    android:gravity="top|center">
+
+                    <LinearLayout
+                        android:id="@+id/botonPodado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/borde_menu"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha=".8"
+                                android:padding="15dp"
+                                app:srcCompat="@mipmap/me_podado" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_bold"
+                            android:padding="10dp"
+                            android:text="Podado"
+                            android:textAlignment="center"
+                            android:textColor="#999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/botonAgua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/borde_menu"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha=".8"
+                                android:padding="15dp"
+                                app:srcCompat="@mipmap/me_agua" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_bold"
+                            android:padding="10dp"
+                            android:text="Agua"
+                            android:textAlignment="center"
+                            android:textColor="#999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/botonBasura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/borde_menu"
+                            android:elevation="5dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha=".8"
+
+                                android:padding="15dp"
+                                app:srcCompat="@mipmap/me_basura" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway_bold"
+                            android:padding="10dp"
+                            android:text="Basura"
+                            android:textAlignment="center"
+                            android:textColor="#999"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/botonTelefonos"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:padding="5dp"
+                app:srcCompat="@mipmap/me_menu" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/Layout_Menu"
+        layout="@layout/vista_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+</RelativeLayout>

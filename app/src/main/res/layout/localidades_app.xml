@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:clipToPadding="false"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Municipio.Localidades_App">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:elevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/degradado_amarillo"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/botonRegresar"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="17dp"
+                    app:srcCompat="@drawable/ic_regresar" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Localidades"
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ListView
+            android:id="@+id/ListLocalidades"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</RelativeLayout>

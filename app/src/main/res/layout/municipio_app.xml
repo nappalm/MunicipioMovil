@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="desarrolladoresalpha.municipiomovil.App_Municipio.Municipio_App">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                app:srcCompat="@mipmap/peribanmovil" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Peribán, Michoacán, México."
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:padding="10dp"
+                android:text="CRONOLOGÍA DE HECHOS HISTÓRICOS"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:padding="10dp"
+                android:text="MEDIO FÍSICO."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Características del clima."
+                android:textAlignment="center"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Orografía"
+                android:textAlignment="center"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Hidrografía"
+                android:textAlignment="center"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Principales Ecosistemas"
+                android:textAlignment="center"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Recursos Naturales"
+                android:textAlignment="center"
+                android:textColor="#999" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:padding="10dp"
+                android:text="TURISMO."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_gris"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semibold"
+                android:padding="10dp"
+                android:text="MUNUMENTOS HISTORICOS."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/img_r2" />
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/img_r1" />
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/img_r3" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/botonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="15dp"
+        app:srcCompat="@drawable/ic_regresar_negro"
+        tools:ignore="VectorDrawableCompat" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MunicipioMóvil</string>
+
+    <!--Direccionamiento de datos-->
+    <string name="registrar_reporte">http://municipiomovil.com/peribanmovil/reporte_guardar.php</string>
+    <string name="usuario_login">http://municipiomovil.com/peribanmovil/usuario_login.php</string>
+    <string name="usuario_modificar">http://municipiomovil.com/peribanmovil/usuario_modificar.php</string>
+    <string name="usuario_registro">http://municipiomovil.com/peribanmovil/usuario_registro.php</string>
+    <string name="mostrar_localidades">http://municipiomovil.com/peribanmovil/mostrar_localidades.php</string>
+    <string name="mostrar_telefonos">http://municipiomovil.com/peribanmovil/mostrar_telefonos.php</string>
+    <string name="mostrar_reportes">http://municipiomovil.com/peribanmovil/usuario_reportes.php</string>
+    <string name="mostrar_validacion">http://municipiomovil.com/peribanmovil/usuario_validar.php</string>
+    <string name="usuario_keycode">http://municipiomovil.com/peribanmovil/usuario_keycode.php</string>
+    <string name="usuario_keyreenviar">http://municipiomovil.com/peribanmovil/usuario_reenviar.php</string>
+    <string name="usuario_recuperar">http://municipiomovil.com/peribanmovil/usuario_recuperar.php</string>
+    <string name="municipio_noticias">http://municipiomovil.com/peribanmovil/municipio_noticias.php</string>
+
+</resources>
